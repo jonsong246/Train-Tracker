@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Train Tracker</title>
+    
+
+      <div class="container main">
+
+
+      <div class=" well-sm jumbotron text-center">
+               <img id="trainicon" src = "assets/images/Train Icon.png">
+               <h1 class="title">Train Tracker<br><span class="fader"></span><br><span class="fadest"></span></h1>
+               <hr>
+               <h5 class="timeCurrent text-center"></h5>
+         </div>
+
+           <div class="row ">
+             <div class="col-sm-1"></div>
+               <div class=" col-sm-3 sidenav alert  trainForm well-sm">
+                 <h3 class="alert-header text-left">Add a Train: </h3>
+               
+               <form role="form">
+                 <div class="form-group ">
+                   <label for="trainNameId" >Train Name:</label> <input class="form-control " id="trainNameId" onfocus="this.value=' '" type="text">
+                 </div><br>
+                 <div class="form-group ">
+                   <label for="destinationId" >Destination: </label><input class="form-control" id="destinationId" onfocus="this.value=' '" type="text">
+                 </div><br>        
+                 <div class=" form-group firstTrainTimeId ">
+                   <label for="start-date-input">First Train Time: </label> 
+                   <input class="form-control" id="firstTrainTimeId" onfocus="this.value=' '" placeholder="24:00 format (HH:mm)" type="text">
+                 </div><br>
+                 <div class="form-group ">
+                   <label for="frequencyId">Frequency (min) </label> <input class="form-control" id="frequencyId" onfocus="this.value=' '" placeholder="minutes" type="text">
+                 </div>
+                 <div class="form-group ">
+                 <button class="btn btn-primary btn-sm" id="submit" type="submit">Submit</button></div>
+               </form>
+             </div>
+             <div class=" col-sm-7 alert  trainSchedule well-sm">
+               <h3 class="text-right"></h3>
+     <hr>        <table class="table">
+               <thead>
+                 <tr>
+                   <th>Train Name</th>
+                   <th>Destination</th>
+                   <th>Frequency</th>
+                   <th>Next Arrival</th>
+                   <th>Minutes Away</th>
+                 </tr>
+               </thead>
+               <tbody id="train-data">
+               </tbody>
+             </table>
+             </div>
+             <div class="col-sm-1"></div>
+          </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body> 
+</html>
