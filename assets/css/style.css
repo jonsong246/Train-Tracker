@@ -1,0 +1,54 @@
+#trainicon{
+    width:50px !important;
+    height:50px !important;
+}
+.content {
+  background-color: rgba(255, 255, 255, .3);
+  padding: 15px;
+}
+.panel-header {
+  color: black;
+}
+.main {
+  background-color: rgba(255, 255, 255, .6);
+
+}
+h1.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 50pt;
+}
+
+th {
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, .6);
+}
+td {
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, .8);
+  font-family: 'Inconsolata', monospace;
+}
+h3{
+  font-size: 40px;
+
+}
+h5 {
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+}
+.fader{
+  color: rgba(0,0,0, .5);
+}
+.fadest{
+  color: rgba(0,0,0, .2);
+}
+.timeCurrent {
+  font-family: 'Inconsolata', monospace;
+  font-size: 24px;
+  color:black;
+}
+.trainForm{
+  background-color: rgba(285, 265, 285, .8);
+
+}
